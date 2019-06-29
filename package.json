@@ -1,0 +1,31 @@
+{
+    "name": "wallet-account",
+    "version": "1.0.0",
+    "description": "",
+    "main": "example.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node src/lib/index.js",
+        "build": "babel src --out-dir dist",
+        "serve": "node dist/server.js",
+        "test": "nodemon --exec babel-node src/example.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/node": "^7.4.5",
+        "@babel/preset-env": "^7.4.5"
+    },
+    "dependencies": {
+        "bip32": "^2.0.3",
+        "bip32-utils": "^0.11.1",
+        "bip39": "^3.0.2",
+        "bitcoinjs-lib": "^5.0.5",
+        "random-number-csprng": "^1.0.2",
+        "sjcl": "^1.0.8",
+        "tronweb": "^2.6.3",
+        "web3": "^1.0.0-beta.55"
+    }
+}
